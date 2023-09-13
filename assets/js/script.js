@@ -50,12 +50,11 @@ buttonRightRef.addEventListener("click", function () {
   counter++;
 
   itemRef[counter].classList.remove("hide");
- 
+
   // nascondo il bottone di destra una volta terminate le immagini;
-  if(counter === images.length - 1){
-    buttonRightRef.classList.add('hide');
+  if (counter === images.length - 1) {
+    buttonRightRef.classList.add("hide");
   }
- 
 });
 
 //7. Creo l'evento al click per nascondere/mostrare le immagini al contrario, quindi decremento il counter;
@@ -65,8 +64,11 @@ buttonLeftRef.addEventListener("click", function () {
 
   itemRef[counter].classList.remove("hide");
 
-    // nascondo il bottone di sinistra quando il contatore ritorna allo 0;
-    if(counter == 0){
-        buttonRightRef.classList.add('hide');
-      }
+  //quando torno indetro rimuovo hide dal bottone destro 
+  buttonRightRef.classList.remove('hide');
+
+  // nascondo il bottone di sinistra quando il contatore ritorna allo 0;
+  if (counter === 0) {
+    buttonRightRef.classList.add("hide");
+  }
 });
