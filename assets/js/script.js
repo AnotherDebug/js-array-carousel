@@ -52,3 +52,11 @@ buttonRightRef.addEventListener('click', function() {
 
     itemRef[counter].classList.remove('hide');
 });
+
+//7. Creo l'evento al click per nascondere/mostrare le immagini al contrario, quindi decremento il counter;
+buttonLeftRef.addEventListener('click', function() {
+    itemRef[counter].classList.add('hide');
+    counter--;
+
+    itemRef[counter].classList.remove('hide');
+});
