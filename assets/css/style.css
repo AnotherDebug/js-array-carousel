@@ -47,6 +47,17 @@
    object-position: 100%;
 }
 
+.hide {
+    display: none;
+}
+
+.button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: white;
+}
+
 
 
 
