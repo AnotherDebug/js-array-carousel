@@ -20,4 +20,12 @@ const itemsSliderRef = document.querySelector('.items-slider');
 const buttonLeft = document.querySelector('.left');
 const buttonRight = document.querySelector('.right');
 
+//2. Creo la mia lista di immagini;
 
+const images = [
+    "assets/img/01.webp",
+    "assets/img/02.webp",
+    "assets/img/03.webp",
+    "assets/img/04.webp",
+    "assets/img/05.webp"
+];
