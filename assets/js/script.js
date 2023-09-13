@@ -51,6 +51,9 @@ buttonRightRef.addEventListener("click", function () {
 
   itemRef[counter].classList.remove("hide");
 
+   //quando vado avanti rimuovo hide dal bottone di sinistra
+  buttonLeftRef.classList.remove('hide');
+
 
   // nascondo il bottone di destra una volta terminate le immagini;
   if (counter === images.length - 1) {
@@ -70,6 +73,6 @@ buttonLeftRef.addEventListener("click", function () {
 
   // nascondo il bottone di sinistra quando il contatore ritorna allo 0;
   if (counter === 0) {
-    buttonRightRef.classList.add("hide");
+    buttonLeftRef.classList.add("hide");
   }
 });
