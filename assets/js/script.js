@@ -35,5 +35,5 @@ const images = [
 
 for(let i=0; i<images.length; i++) {
     const img = images [i];
-    console.log(img);
+    itemsSliderRef.innerHTML += `<img class="item" src="${img}" alt="">`;
 };
