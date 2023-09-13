@@ -12,11 +12,39 @@
     UTILITIES
  ************************************************/
 
+ /* !"DEBUG" DA ELIMINARE TERMINATO IL CODICE*/
+.debug {
+    background-color: rgba(0, 102, 255, 0.5);
+    border: 1px solid #000;
+}
+
 .main-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 100%;
+}
+
+.items-slider {
+    height: 450px;
+    background-color: blue;
+}
+
+.items-slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   object-position: 100%;
 }
 
 
