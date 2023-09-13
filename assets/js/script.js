@@ -16,47 +16,51 @@
 
 //1. Salvo tutti i percorsi all'interno delle variabili di cui ho bisogno;
 
-const itemsSliderRef = document.querySelector('.items-slider');
-const buttonLeftRef = document.querySelector('.left');
-const buttonRightRef = document.querySelector('.right');
-const itemRef = document.getElementsByClassName('item');
-
+const itemsSliderRef = document.querySelector(".items-slider");
+const buttonLeftRef = document.querySelector(".left");
+const buttonRightRef = document.querySelector(".right");
+const itemRef = document.getElementsByClassName("item");
 
 //2. Creo la mia lista di immagini;
 
 const images = [
-    "assets/img/01.webp",
-    "assets/img/02.webp",
-    "assets/img/03.webp",
-    "assets/img/04.webp",
-    "assets/img/05.webp"
+  "assets/img/01.webp",
+  "assets/img/02.webp",
+  "assets/img/03.webp",
+  "assets/img/04.webp",
+  "assets/img/05.webp",
 ];
 
 //3. Creo il ciclo dove gestisco la collection images
 
-for(let i=0; i<images.length; i++) {
-    const img = images [i];
-    itemsSliderRef.innerHTML += `<img class="item hide" src="${img}" alt="">`;
-};
+for (let i = 0; i < images.length; i++) {
+  const img = images[i];
+  itemsSliderRef.innerHTML += `<img class="item hide" src="${img}" alt="">`;
+}
 
 //4. Rimuovo dal mio item la classe 'hide' per vsualizzare l'immagine;
-itemRef [0].classList.remove('hide');
+itemRef[0].classList.remove("hide");
 
 //5. Creo una variabile counter per gestire la classe 'hide';
 let counter = 0;
 
 //6. Creo l'evento al click per nascondere/mostrare le immagini;
-buttonRightRef.addEventListener('click', function() {
-    itemRef[counter].classList.add('hide');
-    counter++;
+buttonRightRef.addEventListener("click", function () {
+  itemRef[counter].classList.add("hide");
+  counter++;
 
-    itemRef[counter].classList.remove('hide');
+  itemRef[counter].classList.remove("hide");
+ 
+  if(counter === images.length){
+    buttonRightRef.classList.add('hide');
+  }
+ 
 });
 
 //7. Creo l'evento al click per nascondere/mostrare le immagini al contrario, quindi decremento il counter;
-buttonLeftRef.addEventListener('click', function() {
-    itemRef[counter].classList.add('hide');
-    counter--;
+buttonLeftRef.addEventListener("click", function () {
+  itemRef[counter].classList.add("hide");
+  counter--;
 
-    itemRef[counter].classList.remove('hide');
+  itemRef[counter].classList.remove("hide");
 });
