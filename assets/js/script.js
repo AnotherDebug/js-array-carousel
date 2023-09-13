@@ -20,6 +20,7 @@ const itemsSliderRef = document.querySelector('.items-slider');
 const buttonLeft = document.querySelector('.left');
 const buttonRight = document.querySelector('.right');
 
+
 //2. Creo la mia lista di immagini;
 
 const images = [
@@ -29,3 +30,9 @@ const images = [
     "assets/img/04.webp",
     "assets/img/05.webp"
 ];
+
+//3. Creo il ciclo dove gestisco la collection images
+
+for(let i=0; i<images.length; i++) {
+    
+};
