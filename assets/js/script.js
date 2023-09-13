@@ -17,8 +17,8 @@
 //1. Salvo tutti i percorsi all'interno delle variabili di cui ho bisogno;
 
 const itemsSliderRef = document.querySelector('.items-slider');
-const buttonLeft = document.querySelector('.left');
-const buttonRight = document.querySelector('.right');
+const buttonLeftRef = document.querySelector('.left');
+const buttonRightRef = document.querySelector('.right');
 const itemRef = document.getElementsByClassName('item');
 
 
@@ -41,3 +41,14 @@ for(let i=0; i<images.length; i++) {
 
 //4. Rimuovo dal mio item la classe 'hide' per vsualizzare l'immagine;
 itemRef [0].classList.remove('hide');
+
+//5. Creo una variabile counter per gestire la classe 'hide';
+let counter = 0;
+
+//6. Creo l'evento al click per nascondere/mostrare le immagini;
+buttonRightRef.addEventListener('click', function() {
+    itemRef[counter].classList.add('hide');
+    counter++;
+
+    itemRef[counter].classList.remove('hide');
+});
