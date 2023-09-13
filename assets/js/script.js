@@ -51,6 +51,7 @@ buttonRightRef.addEventListener("click", function () {
 
   itemRef[counter].classList.remove("hide");
 
+
   // nascondo il bottone di destra una volta terminate le immagini;
   if (counter === images.length - 1) {
     buttonRightRef.classList.add("hide");
