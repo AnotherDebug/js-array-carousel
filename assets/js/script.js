@@ -34,5 +34,6 @@ const images = [
 //3. Creo il ciclo dove gestisco la collection images
 
 for(let i=0; i<images.length; i++) {
-    
+    const img = images [i];
+    console.log(img);
 };
