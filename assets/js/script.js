@@ -19,6 +19,7 @@
 const itemsSliderRef = document.querySelector('.items-slider');
 const buttonLeft = document.querySelector('.left');
 const buttonRight = document.querySelector('.right');
+const itemRef = document.getElementsByClassName('item');
 
 
 //2. Creo la mia lista di immagini;
@@ -35,5 +36,8 @@ const images = [
 
 for(let i=0; i<images.length; i++) {
     const img = images [i];
-    itemsSliderRef.innerHTML += `<img class="item" src="${img}" alt="">`;
+    itemsSliderRef.innerHTML += `<img class="item hide" src="${img}" alt="">`;
 };
+
+//4. Rimuovo dal mio item la classe 'hide' per vsualizzare l'immagine;
+itemRef [0].classList.remove('hide');
