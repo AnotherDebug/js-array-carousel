@@ -17,8 +17,8 @@
 //1. Salvo tutti i percorsi all'interno delle variabili di cui ho bisogno;
 
 const itemsSliderRef = document.querySelector(".items-slider");
-const buttonLeftRef = document.querySelector(".left");
-const buttonRightRef = document.querySelector(".right");
+const buttonLeftRef = document.querySelector(".up");
+const buttonRightRef = document.querySelector(".down");
 const itemRef = document.getElementsByClassName("item");
 
 //2. Creo la mia lista di immagini;
