@@ -27,7 +27,7 @@
 
 .container {
     width: 80%;
-    height: 80%;
+    height: 450px;
     margin: 0 auto;
 }
 
@@ -37,12 +37,12 @@
 
 .slider {
     height: 100%;
+    position: relative;
 }
 
 .items-slider {
     width: 80%;
-    height: 500px;
-    position: relative;
+   height: 100%;
 }
 
 .items-slider img {
@@ -56,7 +56,8 @@
 .items-thumbs {
     flex-direction: column;
     width: 20%;
-    height: 500px;
+    height: 100%;
+    
 }
 
 .items-thumbs .thumb{
@@ -70,28 +71,23 @@
     display: none;
 }
 
+.buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 8%;
+}
+
 .button {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: white;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     cursor: pointer;
+    top: 50%;
 }
-
-
-.button.left {
-    left: 150px;
-}
-
-.button.right {
-    right: 150px;
-}
-
-
-
 
 /************************************************
     SITE SECTIONS
