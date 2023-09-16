@@ -17,6 +17,7 @@
 //1. Salvo tutti i percorsi all'interno delle variabili di cui ho bisogno;
 
 const itemsSliderRef = document.querySelector(".items-slider");
+const itemsThumbsRef = document.querySelector(".items-thumbs");
 const buttonLeftRef = document.querySelector(".up");
 const buttonRightRef = document.querySelector(".down");
 const itemRef = document.getElementsByClassName("item");
